@@ -4,9 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Tip Calculator App</title>
 </head>
 <body>
-  
+  <main>
+    <div class="left-side">
+      <div class="bill-container">
+       <label for="bill">Bill</label>
+       <input type="text" class="bill" id="bill-input" value="$">
+      </div>
+    <div class="select-tip-container">
+      <button>5%</button>
+      <button>10%</button>
+      <button>15%</button>
+      <button>25%</button>
+      <button>50%</button>
+      <button>Custom</button>
+    </div>
+    <div>
+      <label for="num-of-people">Number of People</label>
+      <input type="text" class="num-of-people" id="num-of-people-input" value="0">
+    </div>
+    </div>
+    <div class="right-side">
+      <div class="tip-amount">
+       <h3>Tip Amount</h3>
+       <p>/ person</p>
+       <h2>$0.00</h2>
+      </div>
+      <div class="total-amount">
+        <h3>Total</h3>
+        <p>/ person</p>
+        <h2>$0.00</h2>
+       </div>
+       <button class="reset-button">RESET</button>
+    </div>
+  </main>
+  <script src="./main.js"></script>
 </body>
 </html>
