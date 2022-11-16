@@ -22,7 +22,6 @@ body {
   font-size: 18px;
 }
 
-
 /* Left-side */
 .left-side {
   padding: 10px;
@@ -35,10 +34,12 @@ body {
 }
 
 .left-side input {
-  padding: 5px;
+  padding: 10px;
   width: 300px;
   margin-bottom: 5px;
   border-radius: 5px;
+  border: none;
+  background: rgb(222, 234, 238);
 }
 
 .select-tip-container {
@@ -62,6 +63,11 @@ body {
   border-radius: 5px;
 }
 
+.button-grid button:hover {
+  cursor: pointer;
+  background: rgb(89, 162, 196);
+}
+
 .button-grid .custom-button {
   background: rgb(206, 215, 221);
   color: rgb(26, 77, 114);
@@ -69,15 +75,34 @@ body {
   font-size: 20px;
 }
 
+/* .button-grid .custom-button:hover {
 
-
-
-
-
+} */
 
 /* Right-side */
 .right-side {
   background: rgb(26, 77, 114);
+  color: #fff;
   border-radius: 10px;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.tip-amount, .total-amount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.reset-button {
+  width: 100%;
+  margin: 100px auto 0;
   padding: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  background: rgb(145, 191, 223);
+  border-radius: 5px;
+  border: none;
+  /* opacity: .4; */
 }
